@@ -33,246 +33,23 @@
         nav a:hover { background: rgba(255,255,255,0.1); }
 
         .scrolling-news { background: #fff3cd; color: #856404; padding: 10px 0; overflow: hidden; white-space: nowrap; border-bottom: 1px solid #ffeeba; font-weight: 500; }
-        .scrolling-news p { display: inline-block; padding-left: 100%; animation: scroll-left 30s linear infinite; }
+        .scrolling-news p { display: inline-block; padding-left: 100%; animation: scroll-left 35s linear infinite; }
         @keyframes scroll-left { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
 
         .hero { 
-            background: linear-gradient(135deg, rgba(46, 139, 87, 0.92) 0%, rgba(33, 106, 68, 0.95) 100%), 
-                        url('corp.png');
-            background-size: cover; background-position: center; color: var(--white); padding: 100px 24px; text-align: center; 
-        }
-        .hero h2 { font-size: 42px; margin-bottom: 15px; }
-        .hero h2 span { color: var(--brand-yellow); }
-        .hero p { max-width: 900px; margin: 0 auto; color: #d0efda; font-size: 19px; font-weight: 300; line-height: 1.5; }
-
-        section { padding: 60px 24px; }
-        .section-inner { max-width: 1200px; margin: 0 auto; }
-        .section-header { margin-bottom: 35px; border-left: 6px solid var(--brand-yellow); padding-left: 15px; }
-        .section-header h2 { color: var(--brand-green); font-size: 28px; }
-
-        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
-        .contact-card { background: var(--white); padding: 22px; border-radius: var(--radius-md); border: 1px solid var(--border); transition: transform 0.2s; }
-        .contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
-        .contact-card h4 { color: var(--brand-green); margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        .contact-link { color: var(--brand-green); text-decoration: none; font-weight: 500; word-break: break-all; }
-
-        .doc-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; }
-        .doc-box { background: var(--white); padding: 25px; border-radius: var(--radius-lg); border: 1px solid var(--border); height: 100%; }
-        .doc-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px; gap: 10px; }
-        .btn-download { background: var(--brand-green); color: var(--white); padding: 6px 14px; border-radius: 4px; text-decoration: none; font-size: 12px; font-weight: 700; cursor: pointer; display: inline-block; }
-
-        .reunion-highlight { background: #e8f5ee; border-radius: var(--radius-lg); padding: 40px; display: flex; flex-direction: column; gap: 30px; margin-bottom: 40px; border: 1px solid #c3e6cb; }
-        
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
-        .gallery-item { border-radius: 10px; overflow: hidden; box-shadow: var(--shadow-md); background: #fff; padding: 5px; border: 1px solid #ddd; transition: transform 0.3s; }
-        .gallery-item:hover { transform: translateY(-5px); }
-        .gallery-item img { width: 100%; height: 160px; object-fit: cover; display: block; border-radius: 6px; }
-
-        footer { background: #f0f0f0; padding: 30px 24px; text-align: center; font-size: 13px; color: var(--text-mid); border-top: 1px solid var(--border); }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="header-inner">
-        <div class="logo-text">
-            <h1>Corpbank Family</h1>
-            <p>Community of Retired Colleagues – Keralam</p>
-        </div>
-        <nav>
-            <a href="#reunion">Thrissur Meet</a>
-            <a href="#contacts">Contacts</a>
-            <a href="#documents">Forms & Circulars</a>
-        </nav>
-    </div>
-</header>
-
-<div class="scrolling-news">
-    <p>${currentNews}</p>
-</div>
-
-<section class="hero" id="home">
-    <div class="hero-inner">
-        <h2>Uniting the <span>Corpbank Family in Keralam</span></h2>
-        <p>A warm community for all colleagues across Keralam who joined Corporation Bank and retired either from Corp Bank or Union Bank of India. Join us to reconnect, share memories, and stay in touch.</p>
-    </div>
-</section>
-
-<section id="reunion">
-    <div class="section-inner">
-        <div class="section-header">
-            <h2>Corp Bank Unity Meet - Thrissur</h2>
-        </div>
-        <div class="reunion-highlight">
-            <div class="reunion-text">
-                <h3>A Grand Celebration of Bonds</h3>
-                <p>On **March 14, 2026**, colleagues from across Keralam gathered in **Thrissur** for the "Corp Bank Unity Meet," organized by **U.J. Babu and team**. It was a day of rekindling lifelong friendships.</p>
-            </div>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="tcr/photo (1).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (2).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (3).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (4).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (5).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (6).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (7).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (8).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (9).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (10).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (11).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (12).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (13).jpeg" alt="Thrissur Meet"></div>
-                <div class="gallery-item"><img src="tcr/photo (14).jpeg" alt="Thrissur Meet"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contacts">
-    <div class="section-inner">
-        <div class="section-header">
-            <h2>EBD & Support Contacts</h2>
-        </div>
-        <div class="contact-grid" id="public-contacts-grid"></div>
-    </div>
-</section>
-
-<section id="documents" style="background: #fdfdfd;">
-    <div class="section-inner">
-        <div class="section-header">
-            <h2>Resources & Documents</h2>
-        </div>
-        <div class="doc-container">
-            <div class="doc-box">
-                <h4 style="color: var(--brand-green); margin-bottom: 15px;">Master Circulars</h4>
-                <div id="box-master"></div>
-            </div>
-            <div class="doc-box">
-                <h4 style="color: var(--brand-green); margin-bottom: 15px;">Staff Advisories</h4>
-                <div id="box-advisories"></div>
-            </div>
-            <div class="doc-box">
-                <h4 style="color: var(--brand-green); margin-bottom: 15px;">Application Forms & Compliance</h4>
-                <div id="box-forms"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Corporation Bank Family – Community of Retired Colleagues (Keralam)</p>
-</footer>
-
-<script>
-    const runtimeContacts = ${JSON.stringify(currentContacts)};
-    const runtimeDocs = ${JSON.stringify(currentDocs)};
-    
-    window.onload = function() {
-        const contactGrid = document.getElementById('public-contacts-grid');
-        runtimeContacts.forEach(c => {
-            const card = document.createElement('div');
-            card.className = 'contact-card';
-            if(c.color === 'YELLOW') {
-                card.style.background = 'var(--brand-yellow)';
-                card.style.borderColor = 'var(--brand-yellow)';
-            }
-            
-            let emailContent = '';
-            if(c.email) {
-                if(c.email.includes('@')) {
-                    emailContent = \`<p>✉️ <a href="mailto:${c.email}" class="contact-link" ${c.color === 'YELLOW' ? 'style="color:#202124;"' : ''}>${c.email}</a></p>\`;
-                } else {
-                    emailContent = Cancel = \`<p>✉️ <a href="${c.email}" target="_blank" class="contact-link" ${c.color === 'YELLOW' ? 'style="color:#202124;"' : ''}>View Document</a></p>\`;
-                }
-            }
-            
-            let phoneContent = c.phone ? \` | 📞 <a href="tel:${c.phone}" class="contact-link">${c.phone}</a>\` : '';
-            let metaRow = (c.desig || c.phone) ? \`<p>${c.desig}${phoneContent}</p>\` : '';
-            
-            card.innerHTML = `
-                <h4 ${c.color === 'YELLOW' ? 'style="border-color:rgba(0,0,0,0.1);"' : ''}>${c.cell}</h4>
-                <p><strong>${c.name}</strong></p>
-                ${metaRow}
-                ${emailContent}
-            `;
-            contactGrid.appendChild(card);
-        });
-
-        runtimeDocs.forEach(doc => {
-            const targetBox = document.getElementById('box-' + doc.category);
-            if (!targetBox) return;
-            
-            const div = document.createElement('div');
-            div.className = 'doc-item';
-            
-            let icon = "📄 ";
-            if(doc.category === 'advisories') icon = "📕 ";
-            if(doc.type === 'DOCX') icon = "📘 ";
-            
-            let btnActionHtml = '';
-            if(doc.type === 'BOTH') {
-                btnActionHtml = \`
-                    <div style="display:flex; gap:5px;">
-                        <a href="${doc.filename}.docx" class="btn-download" style="background: #2b579a;" download>DOCX</a>
-                        <a href="${doc.filename}.pdf" class="btn-download" target="_blank">PDF</a>
-                    </div>\`;
-            } else {
-                btnActionHtml = \`<a href="${doc.filename}" class="btn-download" target="_blank">${doc.type}</a>\`;
-            }
-            
-            div.innerHTML = `<span>${icon}${doc.title}</span> ${btnActionHtml}`;
-            targetBox.appendChild(div);
-        });
-    };
-</script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corpbank Family – Community of Retired Colleagues (Keralam)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #f7f9fc;
-            --brand-green: #2e8b57; 
-            --brand-yellow: #f8c92a; 
-            --text-dark: #202124;
-            --text-mid: #5f6368;
-            --white: #ffffff;
-            --border: #e0e6ed;
-            --radius-lg: 16px;
-            --radius-md: 8px;
-            --shadow-md: 0 4px 15px rgba(0,0,0,0.08);
-        }
-
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Roboto', sans-serif; background: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
-        
-        header { background: var(--brand-green); padding: 14px 24px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
-        .logo-text h1 { color: var(--white); font-size: 20px; font-weight: 700; }
-        .logo-text p { color: var(--brand-yellow); font-size: 12px; font-weight: 500; letter-spacing: 0.5px; }
-        
-        nav a { color: var(--white); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 15px; border-radius: 20px; transition: background 0.2s; }
-        nav a:hover { background: rgba(255,255,255,0.1); }
-
-        .scrolling-news { background: #fff3cd; color: #856404; padding: 10px 0; overflow: hidden; white-space: nowrap; border-bottom: 1px solid #ffeeba; font-weight: 500; }
-        .scrolling-news p { display: inline-block; padding-left: 100%; animation: scroll-left 30s linear infinite; }
-        @keyframes scroll-left { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
-
-        .hero { 
-            background: linear-gradient(135deg, rgba(46, 139, 87, 0.92) 0%, rgba(33, 106, 68, 0.95) 100%), 
+            background: linear-gradient(135deg, rgba(46, 139, 87, 0.72) 0%, rgba(19, 71, 42, 0.85) 100%), 
                         url('images/corp.png');
-            background-size: cover; background-position: center; color: var(--white); padding: 100px 24px; text-align: center; 
+            background-size: cover; 
+            background-position: center 30%; 
+            background-repeat: no-repeat;
+            color: var(--white); 
+            padding: 120px 24px; 
+            text-align: center; 
+            box-shadow: inset 0 0 100px rgba(0,0,0,0.3);
         }
-        .hero h2 { font-size: 42px; margin-bottom: 15px; }
+        .hero h2 { font-size: 46px; margin-bottom: 15px; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); }
         .hero h2 span { color: var(--brand-yellow); }
-        .hero p { max-width: 900px; margin: 0 auto; color: #d0efda; font-size: 19px; font-weight: 300; line-height: 1.5; }
+        .hero p { max-width: 900px; margin: 0 auto; color: #f0fff4; font-size: 20px; font-weight: 400; line-height: 1.5; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); }
 
         section { padding: 60px 24px; }
         .section-inner { max-width: 1200px; margin: 0 auto; }
@@ -298,6 +75,7 @@
         .gallery-item img { width: 100%; height: 160px; object-fit: cover; display: block; border-radius: 6px; }
 
         footer { background: #f0f0f0; padding: 30px 24px; text-align: center; font-size: 13px; color: var(--text-mid); border-top: 1px solid var(--border); }
+        footer p { margin-bottom: 5px; }
     </style>
 </head>
 <body>
@@ -317,7 +95,7 @@
 </header>
 
 <div class="scrolling-news">
-    <p>📢 IMPORTANT: From April 1, 2026, Form 121 unified self-declaration replaces Form 15H/15G. | Quoting PAN is mandatory for all TDS declarations. | Senior citizens can file Form 121 once a year via central portals. | please do not click on any links claiming pension revision, arrears payment, KYC update, or account verification. Banks do not seek such information through WhatsApp messages or unknown links.Never share OTP, PIN, password, CVV, or screen access with anyone.When in doubt, contact your branch directly.  📢</p>
+    <p>📢 IMPORTANT: From April 1, 2026, Form 121 unified self-declaration replaces Form 15H/15G. | Quoting PAN is mandatory for all TDS declarations. | Senior citizens can file Form 121 once a year via central portals. | Please do not click on any links claiming pension revision, arrears payment, KYC update, or account verification. Banks do not seek such information through WhatsApp messages or unknown links. Never share OTP, PIN, password, CVV, or screen access with anyone. When in doubt, contact your branch directly. 📢</p>
 </div>
 
 <section class="hero" id="home">
@@ -335,7 +113,7 @@
         <div class="reunion-highlight">
             <div class="reunion-text">
                 <h3>A Grand Celebration of Bonds</h3>
-                <p>On **March 14, 2026**, colleagues from across Keralam gathered in **Thrissur** for the "Corp Bank Unity Meet," organized by **U.J. Babu and team**. It was a day of rekindling lifelong friendships.</p>
+                <p>On <strong>March 14, 2026</strong>, colleagues from across Keralam gathered in <strong>Thrissur</strong> for the "Corp Bank Unity Meet," organized by U.J. Babu and team. It was a day of rekindling lifelong friendships.</p>
             </div>
             
             <div class="gallery-grid">
@@ -391,15 +169,33 @@
 
 <footer>
     <p>© 2026 Corporation Bank Family – Community of Retired Colleagues (Keralam)</p>
-    <p>Designed and Developed by Sankaranarayanan | For any suggestions or contributions, please contact us. </p>
+    <p>Designed and Developed by Sankaranarayanan | For any suggestions or contributions, please contact us.</p>
 </footer>
 
 <script>
-    const runtimeContacts = [{"id":"c1","cell":"Staff Pension Cell","name":"Shri. Swapnil Chandrakant Gadhekar","desig":"Senior Manager","phone":"022-22896246","email":"ebd.co@unionbankofindia.bank","color":"DEFAULT"},{"id":"c2","cell":"Gratuity Cell","name":"Shri Roshan Gope","desig":"Sr Manager","phone":"022-22896246","email":"ebd.co@unionbankofindia.bank","color":"DEFAULT"},{"id":"c3","cell":"Provident Fund Cell","name":"Mr. Vivek Singh","desig":"Manager","phone":"022-22896251","email":"ebd.co@unionbankofindia.bank","color":"DEFAULT"},{"id":"c5","cell":"Heritage Health TPA","name":"Medical Insurance Support","desig":"Third Party Administrator","phone":"","email":"images/heritage_health_contact.pdf","color":"YELLOW"},{"id":"con_1781016635896","cell":"UBIREMAS","name":"Shri Ram Kanhaiyalal Panchal","desig":"","phone":"022-22896383","email":"staffmediclaim@unionbankofindia.bank","color":"DEFAULT"},{"id":"con_1781017395881","cell":"EBD Cell","name":"Shri Vishwas Raghunath Patil","desig":"Chief Manager","phone":"","email":"ebd.co@unionbankofindia.bank","color":"DEFAULT"}];
-    const runtimeDocs = [{"id":"d5","title":"Staff Family Pensioners Advisory (Nov 2025)","category":"advisories","filename":"advisory-to-staff-family-pensioners-nov25.pdf","type":"PDF"},{"id":"d6","title":"Pension Regulations Amendment 1995","category":"advisories","filename":"amendment-to-union-bank-of-india-employees-pension-regulations-1995.pdf","type":"PDF"},{"id":"d7","title":"REMAS Application Form","category":"forms","filename":"remas_app_form","type":"BOTH"},{"id":"d9","title":"Bank Holidays 2026 (Keralam)","category":"forms","filename":"holiday_calendar.pdf","type":"PDF"},{"id":"doc_1781017552936","title":"REMAS Circular","category":"master","filename":"08454-ubiremas-modfication.pdf","type":"PDF"},{"id":"doc_1781017776761","title":"Form 121 Declaration under section 393(6)","category":"forms","filename":"121.pdf","type":"PDF"},{"id":"doc_1781018351616","title":"Beware of Frauds","category":"advisories","filename":"advisory-to-staff-pensioners-Beware of fraudulent.pdf","type":"PDF"}];
+    // Configured back to search your documents inside the images/ folder list
+    const runtimeContacts = [
+        {"id":"c1","cell":"Staff Pension Cell","name":"Shri. Swapnil Chandrakant Gadhekar","desig":"Senior Manager","phone":"022-22896246","email":"ebd.co@unionbankofindia.bank","color":"DEFAULT"},
+        {"id":"c2","cell":"Gratuity Cell","name":"Shri Roshan Gope","desig":"Sr Manager","phone":"022-22896246","email":"ebd.co@unionbankofindia.bank","color":"DEFAULT"},
+        {"id":"c3","cell":"Provident Fund Cell","name":"Mr. Vivek Singh","desig":"Manager","phone":"022-22896251","email":"ebd.co@unionbankofindia.bank","color":"DEFAULT"},
+        {"id":"c5","cell":"Heritage Health TPA","name":"Medical Insurance Support","desig":"Third Party Administrator","phone":"","email":"images/heritage_health_contact.pdf","color":"YELLOW"},
+        {"id":"con_1781016635896","cell":"UBIREMAS","name":"Shri Ram Kanhaiyalal Panchal","desig":"","phone":"022-22896383","email":"staffmediclaim@unionbankofindia.bank","color":"DEFAULT"},
+        {"id":"con_1781017395881","cell":"EBD Cell","name":"Shri Vishwas Raghunath Patil","desig":"Chief Manager","phone":"","email":"ebd.co@unionbankofindia.bank","color":"DEFAULT"}
+    ];
+    
+    const runtimeDocs = [
+        {"id":"d5","title":"Staff Family Pensioners Advisory (Nov 2025)","category":"advisories","filename":"advisory-to-staff-family-pensioners-nov25.pdf","type":"PDF"},
+        {"id":"d6","title":"Pension Regulations Amendment 1995","category":"advisories","filename":"amendment-to-union-bank-of-india-employees-pension-regulations-1995.pdf","type":"PDF"},
+        {"id":"d7","title":"REMAS Application Form","category":"forms","filename":"remas_app_form","type":"BOTH"},
+        {"id":"d9","title":"Bank Holidays 2026 (Keralam)","category":"forms","filename":"holiday_calendar.pdf","type":"PDF"},
+        {"id":"doc_1781017552936","title":"REMAS Circular","category":"master","filename":"08454-ubiremas-modfication.pdf","type":"PDF"},
+        {"id":"doc_1781017776761","title":"Form 121 Declaration under section 393(6)","category":"forms","filename":"121.pdf","type":"PDF"},
+        {"id":"doc_1781018351616","title":"Beware of Frauds","category":"advisories","filename":"advisory-to-staff-pensioners-Beware of fraudulent.pdf","type":"PDF"}
+    ];
     
     window.onload = function() {
         const contactGrid = document.getElementById('public-contacts-grid');
+        
         runtimeContacts.forEach(c => {
             const card = document.createElement('div');
             card.className = 'contact-card';
@@ -411,7 +207,7 @@
             let emailContent = '';
             if(c.email) {
                 if(c.email.includes('@')) {
-                    emailContent = `<p>✉️ <a href="mailto:${c.email}" class="contact-link" ${c.color === 'YELLOW' ? 'style="color:#202124;"' : ''}>	ext{${c.email}}</a></p>`;
+                    emailContent = `<p>✉️ <a href="mailto:${c.email}" class="contact-link" ${c.color === 'YELLOW' ? 'style="color:#202124;"' : ''}>${c.email}</a></p>`;
                 } else {
                     emailContent = `<p>✉️ <a href="${c.email}" target="_blank" class="contact-link" ${c.color === 'YELLOW' ? 'style="color:#202124;"' : ''}>View Document</a></p>`;
                 }
@@ -448,7 +244,7 @@
                         <a href="images/${doc.filename}.pdf" class="btn-download" target="_blank">PDF</a>
                     </div>`;
             } else {
-                btnActionHtml = `<a href="images/${doc.filename}" class="btn-download" target="_blank">	ext{${doc.type}}</a>`;
+                btnActionHtml = `<a href="images/${doc.filename}" class="btn-download" target="_blank">${doc.type}</a>`;
             }
             
             div.innerHTML = `<span>${icon}${doc.title}</span> ${btnActionHtml}`;
